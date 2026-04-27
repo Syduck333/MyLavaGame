@@ -7,6 +7,9 @@ extends Area3D
 func _on_body_entered(body : CharacterBody3D):
 	if body_entered:
 		swap_camera()
+		get_tree().reload_current_scene()
+		
 	
 func swap_camera():
 	camera_2.make_current()
+	
